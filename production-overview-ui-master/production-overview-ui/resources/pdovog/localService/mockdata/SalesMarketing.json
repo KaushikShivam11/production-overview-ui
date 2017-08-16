@@ -1,0 +1,317 @@
+[
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915511')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915511",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "WESTENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915511')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915511",
+		"PLANNEDVALUE": "1500",
+		"CustomerName": "WESTENBRIDGE",
+		"PROPERTYTYPE": "Gas",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915512')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915512",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "RID1",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915513')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915513",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "RID1",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915514')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915514",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "RID1",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915515')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915515",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "RID1",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915516')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915516",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915517')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915517",
+		"PLANNEDVALUE": "2000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Gas",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915518')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915518",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE_1",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('14882900915519')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "14882900915519",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE_1",
+		"PROPERTYTYPE": "Gas",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "North America",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155110')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155110",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "WESTENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "Reg1",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155111')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155111",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "WESTENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "USA",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155112')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155112",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "USA",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155113')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155113",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "USA",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155114')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155114",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "USA",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155115')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155115",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "USA",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155116')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155116",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "Reg1",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155117')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155117",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "Reg1",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155218')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155218",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "Reg1",
+		"ACTUALVALUE": "1200"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155219')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155219",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "NORTHENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487721600000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "Reg1",
+		"ACTUALVALUE": "1500"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/SalesMarketing('148829009155220')",
+			"type": "com.sap.pdms.og.production-overview.services.SalesMarketingType"
+		},
+		"SalesNum": "148829009155220",
+		"PLANNEDVALUE": "1000",
+		"CustomerName": "WESTENBRIDGE",
+		"PROPERTYTYPE": "Oil",
+		"Timestamp": "/Date(1487808000000)/",
+		"PRODUCTIONTYPE": "plannedProduction",
+		"ThingType": "com.sap.pdms.og:RouteOrWellCustomerAssignment",
+		"NODE": "RID2",
+		"ACTUALVALUE": "1200"
+	}
+]

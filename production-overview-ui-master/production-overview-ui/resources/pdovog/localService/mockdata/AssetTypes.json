@@ -1,0 +1,20 @@
+ [
+	{
+		"__metadata": {
+			"uri": "https://mo-06dd8ceeb.mo.sap.corp:52500/api/pdovog/ProductionOverviewService.xsodata/AssetTypes('14885402613601')",
+			"type": "com.sap.pdms.og.production-overview.services.AssetTypesType"
+		},
+		"AssetNum": "14885402613601",
+		"ThingType": "com.sap.pdms.og:ElectricSubmersiblePump",
+		"Description": "Electric Submersible Pump - EN"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-06dd8ceeb.mo.sap.corp:52500/api/pdovog/ProductionOverviewService.xsodata/AssetTypes('14885402613602')",
+			"type": "com.sap.pdms.og.production-overview.services.AssetTypesType"
+		},
+		"AssetNum": "14885402613602",
+		"ThingType": "com.sap.pdms.og:RodPump",
+		"Description": "Rod Pump - EN"
+	}
+]

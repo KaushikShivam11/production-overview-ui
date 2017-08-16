@@ -1,0 +1,7 @@
+<mvc:View controllerName="com.pdms.og.production_overview.controller.NotFound" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<MessagePage title="{i18n>NOT_FOUND_TITLE}" text="{i18n>NOT_FOUND_TEXT}" icon="{sap-icon://document}" id="page" description="">
+		<customDescription>
+			<Link id="poLinkGoBack" text="{i18n>BACK_TO_HOME}" press="onLinkPressed"/>
+		</customDescription>
+	</MessagePage>
+</mvc:View>

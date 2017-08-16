@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet title="Choose Your Action" showCancelButton="true" placement="Bottom">
+		<buttons>
+			<Button text="{i18n>LOGOFF_BUTTON_TEXT}" press="onLogoffPress"/>
+		</buttons>
+	</ActionSheet>
+</core:FragmentDefinition>

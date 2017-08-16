@@ -1,0 +1,782 @@
+[
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764821')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764821",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "North America",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764822')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764822",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "USA",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764823')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764823",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "Reg1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764824')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764824",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "RID1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764825')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764825",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "WID1",
+                "TotalValue": "6000"
+            },
+           {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764826')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764826",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-10-25 12:00:00",
+                "Timestamp": "/Date(1477396800000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764827')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764827",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764828')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764828",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('14883094764829')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "14883094764829",
+               "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648210')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648210",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648211')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648211",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648212')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648212",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-12-12 12:00:00",
+                "Timestamp": "/Date(1481544000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "7500"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648213')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648213",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648214')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648214",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648215')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648215",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648216')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648216",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648217')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648217",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648218')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648218",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2016-11-12 12:00:00",
+                "Timestamp": "/Date(1478952000000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "7650"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648219')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648219",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648220')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648220",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648221')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648221",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648222')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648222",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648223')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648223",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648224')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648224",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-21 11:46:00",
+                "Timestamp": "/Date(1487677560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "6000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648225')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648225",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648226')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648226",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648227')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648227",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648228')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648228",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648229')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648229",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648230')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648230",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 11:46:00",
+                "Timestamp": "/Date(1487763960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "9900"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648231')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648231",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648232')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648232",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648233')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648233",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648234')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648234",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648235')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648235",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648236')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648236",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "8100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648237')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648237",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "North America",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648238')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648238",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "USA",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648239')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648239",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "Reg1",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648240')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648240",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "RID1",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648241')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648241",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "WID1",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648242')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648242",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 12:46:00",
+                "Timestamp": "/Date(1487767560000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "17100"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648243')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648243",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648244')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648244",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648245')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648245",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648246')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648246",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID1",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648247')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648247",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID1",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648248')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648248",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-23 12:46:00",
+                "Timestamp": "/Date(1487853960000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_1",
+                "TotalValue": "36000"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648249')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648249",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "North America",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648250')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648250",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "USA",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648251')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648251",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "Reg1",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648252')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648252",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "RID2",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648253')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648253",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "WID2",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648254')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648254",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Target",
+                "NODE": "ALM_esp_2",
+                "TotalValue": "10800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648255')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648255",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "North America",
+                "TotalValue": "4800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648256')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648256",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "USA",
+                "TotalValue": "4800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648257')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648257",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "Reg1",
+                "TotalValue": "4800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648258')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648258",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "RID2",
+                "TotalValue": "4800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648259')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648259",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "WID2",
+                "TotalValue": "4800"
+            },
+            {
+                "__metadata": {
+                    "uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdOilYesday('148830947648260')",
+                    "type": "com.sap.pdms.og.production-overview.services.ProdOilYesdayType"
+                },
+                "ProdId": "148830947648260",
+                "CC_Today": "2017-02-27 19:17:56",
+                "CC_TimestampDate": "2017-02-22 00:00:00",
+                "Timestamp": "/Date(1487721600000)/",
+                "PropertySetTypeId": "Actual",
+                "NODE": "ALM_esp_2",
+                "TotalValue": "4800"
+            }
+        ]

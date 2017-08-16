@@ -1,0 +1,26 @@
+{  
+   "comment":"https://wiki.wdf.sap.corp/wiki/display/SLS/Translation+Configuration+File+for+GIT+Workflow",
+   "collections":[  
+      {  
+         "collectionName":"PdMS O-G_production-overview-ui",
+         "folders":[  
+            {
+               "startingFolderPath":"/production-overview-ui/resources/pdovog/i18n/",
+               "sourceFilters":[  
+                  "*.properties"
+               ],
+               "xlfFolderPath":"/xlf",
+               "targetFolderPath":".",
+               "pseudoLocFolderPath":"."
+            }
+         ]
+      }
+   ],
+   "defaultConfiguration":{  
+      "xlfFolderPath":"/xlf",
+      "targetFolderPath":".",
+      "pseudoLocFolderPath":".",
+      "oneQFolderPath":"/1Q/[fullPath]/[targetFile]",
+      "targetFileNamingConvention":"[filename]_[langCode].[extension]"
+   }
+}

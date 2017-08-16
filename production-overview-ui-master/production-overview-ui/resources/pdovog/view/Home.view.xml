@@ -1,0 +1,325 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mc="sap.suite.ui.microchart" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data" xmlns:microChart="sap.suite.ui.microchart" xmlns:table="sap.ui.table" xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:customChart="com.pdms.og.production_overview.control" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m"
+	xmlns:u="sap.ui.unified" controllerName="com.pdms.og.production_overview.controller.Home" displayBlock="true">
+	<u:Shell id="poShell" icon="{viewData>/logo}">
+		<u:user>
+			<u:ShellHeadUserItem image="sap-icon://person-placeholder" username="{config>/userId}" press="onUserItemPressed"/>
+		</u:user>
+		<u:search>
+			<Text width="100%" textAlign="Center" text="{i18n&gt;HOME_VIEW_TITLE}"/>
+		</u:search>
+		<u:headItems>
+			<u:ShellHeadItem icon="sap-icon://nav-back" press="onBackNav"/>
+		</u:headItems>
+		<Page id="poPageHome" showHeader="false">
+			<content>
+				<l:Grid>
+					<VBox class="sapUiSmallMarginTop">
+						<Label text="{i18n>GEOGRAPHY_FILTER_ITEM_LABEL}" tooltip="{i18n>GEOGRAPHY_FILTER_ITEM_TOOLTIP}"/>
+						<MultiInput id="poInputGeography" tokens="{viewData>/Geography}" enableMultiLineMode="true" type="Text" showValueHelp="true"
+							tokenUpdate="onGeoTokenUpdate" valueHelpRequest="onShowGeographyValueHelp">
+							<tokens>
+								<Token key="{viewData>OrgUnitID}" text="{viewData>OrgUnitName}"/>
+							</tokens>
+						</MultiInput>
+						<layoutData>
+							<l:GridData span="L3 M6 S12"/>
+						</layoutData>
+					</VBox>
+					<VBox class="sapUiSmallMarginTop">
+						<Label text="{i18n>ASSET_TYPE_FILTER_ITEM_LABEL}" tooltip="{i18n>ASSET_TYPE_FILTER_ITEM_TOOLTIP}" required="true"/>
+						<ComboBox items="{/Assets}" selectedKey="{viewData>/AssetType}" change="onAssetTypeChange">
+							<core:Item key="{ThingType}" text="{Description}"/>
+						</ComboBox>
+						<layoutData>
+							<l:GridData span="L2 M6 S12"/>
+						</layoutData>
+					</VBox>
+					<HBox justifyContent="End" class="sapUiSmallMarginTop">
+						<Text text="{parts : [{path: 'i18n>LAST_UPDATED_TEXT'}, {path:'viewData>/LastUpdatedTime'}], formatter : 'jQuery.sap.formatMessage' }"/>
+						<layoutData>
+							<l:GridData span="L7 M6 S12"/>
+						</layoutData>
+					</HBox>
+				</l:Grid>
+				<l:VerticalLayout width="100%">
+					<l:Grid defaultSpan="L6 M6 S12">
+						<l:content>
+							<VBox backgroundDesign="Solid">
+								<VBox class="border" height="3rem">
+									<Title
+										text="{parts : [{path:'i18n>INTERVENTIONS_LIST_TITLE'}, {path:'viewData>/NoOfInterventions'}], formatter : 'jQuery.sap.formatMessage' }"
+										level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+								</VBox>
+								<HBox>
+									<ComboBox id="poSelectStatus" selectionChange="onFilterInteventions" selectedKey="{viewData&gt;/InterventionStatus}"
+										items="{viewData>/EventTypes}" class="sapUiSmallMarginBegin sapUiTinyMarginTopBottom">
+										<core:Item key="{viewData>Key}" text="{viewData>Status}"/>
+									</ComboBox>
+								</HBox>
+								<Panel height="50rem" backgroundDesign="Solid">
+									<List id="poListInterventions" updateFinished="onInterventionsUpdateFinished" growing="false" growingThreshold="10"
+										growingScrollToLoad="false">
+										<headerToolbar>
+											<Toolbar design="Solid">
+												<content>
+													<HBox>
+														<Label text="{i18n>PRIORITY_LIST_HEADER_LABEL}" tooltip="{i18n>PRIORITY_LIST_HEADER_TOOLTIP}"
+															class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+														<Label text="{i18n>INTERVENTION_LIST_HEADER_LABEL}" tooltip="{i18n>INTERVENTION_LIST_HEADER_TOOLTIP}"
+															class="sapUiSmallMarginBegin sapUiTinyMarginTop"/>
+													</HBox>
+												</content>
+											</Toolbar>
+										</headerToolbar>
+										<layoutData>
+											<FlexItemData growFactor="1"/>
+										</layoutData>
+									</List>
+								</Panel>
+								<layoutData>
+									<l:GridData span="L3 M6 S12"/>
+								</layoutData>
+							</VBox>
+							<l:VerticalLayout width="100%">
+								<l:Grid hSpacing="0" vSpacing="0">
+									<VBox id="poProductionCommitmentContainer">
+										<VBox backgroundDesign="Solid">
+											<HBox justifyContent="SpaceBetween">
+												<Title text="{i18n>PRODUCTION_COMMITMENT_TITLE}" level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+												<Select selectedKey="{viewData>/ProdCmtmntPeriod}" change="onProductionPeriodChange" class="sapUiTinyMarginTop sapUiTinyMarginEnd">
+													<items>
+														<core:Item text="Month" key="Month" id="__item3"/>
+														<core:Item text="Today" key="Today" id="__item4"/>
+													</items>
+												</Select>
+											</HBox>
+											<l:FixFlex id="chartFixFlex" minFlexSize="100">
+												<l:flexContent>
+													<l:VerticalLayout>
+														<viz:Popover id="idPopOver"/>
+														<viz:VizFrame id="idVizFrameMonth" width="38.3rem" renderComplete="onChartRenderComplete" height="30rem" vizType="dual_line"
+															uiConfig="{applicationSet:'fiori'}">
+															<viz:dataset>
+																<viz.data:FlattenedDataset data="{viewData>/ProductionCommitment}">
+																	<viz.data:dimensions>
+																		<viz.data:DimensionDefinition axis="1" dataType="date" name="Days" value="{viewData>Date}"/>
+																	</viz.data:dimensions>
+																	<viz.data:measures>
+																		<viz.data:MeasureDefinition group="1" value="{viewData>OilPlanned}" name="Oil Planned"/>
+																		<viz.data:MeasureDefinition group="1" value="{viewData>OilActual}" name="Oil Actual (BBL)"/>
+																		<viz.data:MeasureDefinition group="2" value="{viewData>GasPlanned}" name="Gas Planned"/>
+																		<viz.data:MeasureDefinition group="2" value="{viewData>GasActual}" name="Gas Actual (MCF)"/>
+																	</viz.data:measures>
+																</viz.data:FlattenedDataset>
+															</viz:dataset>
+															<viz:feeds>
+																<viz.feeds:FeedItem uid="primaryValues" type="Measure" values="Oil Planned"/>
+																<viz.feeds:FeedItem uid="primaryValues" type="Measure" values="Oil Actual (BBL)"/>
+																<viz.feeds:FeedItem uid="secondaryValues" type="Measure" values="Gas Planned"/>
+																<viz.feeds:FeedItem uid="secondaryValues" type="Measure" values="Gas Actual (MCF)"/>
+																<viz.feeds:FeedItem uid="axisLabels" type="Dimension" values="Days"/>
+															</viz:feeds>
+														</viz:VizFrame>
+														<viz:VizFrame id="idVizFrameDay" visible="false" width="38.3rem" height="30rem" vizType="dual_line" renderComplete="onChartRenderComplete"
+															uiConfig="{applicationSet:'fiori'}">
+															<viz:dataset>
+																<viz.data:FlattenedDataset data="{viewData>/ProductionCommitment}">
+																	<viz.data:dimensions>
+																		<viz.data:DimensionDefinition axis="1" dataType="string" name="Hours" value="{viewData>Date}"/>
+																	</viz.data:dimensions>
+																	<viz.data:measures>
+																		<viz.data:MeasureDefinition group="1" value="{viewData>OilPlanned}" name="Oil Planned"/>
+																		<viz.data:MeasureDefinition group="1" value="{viewData>OilActual}" name="Oil Actual (BBL)"/>
+																		<viz.data:MeasureDefinition group="2" value="{viewData>GasPlanned}" name="Gas Planned"/>
+																		<viz.data:MeasureDefinition group="2" value="{viewData>GasActual}" name="Gas Actual (MCF)"/>
+																	</viz.data:measures>
+																</viz.data:FlattenedDataset>
+															</viz:dataset>
+															<viz:feeds>
+																<viz.feeds:FeedItem uid="primaryValues" type="Measure" values="Oil Planned"/>
+																<viz.feeds:FeedItem uid="primaryValues" type="Measure" values="Oil Actual (BBL)"/>
+																<viz.feeds:FeedItem uid="secondaryValues" type="Measure" values="Gas Planned"/>
+																<viz.feeds:FeedItem uid="secondaryValues" type="Measure" values="Gas Actual (MCF)"/>
+																<viz.feeds:FeedItem uid="axisLabels" type="Dimension" values="Hours"/>
+															</viz:feeds>
+														</viz:VizFrame>
+													</l:VerticalLayout>
+												</l:flexContent>
+											</l:FixFlex>
+										</VBox>
+										<layoutData>
+											<l:GridData span="L8 M6 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox id="poSalesMarketingContainer" class="sapUiSmallMarginBegin">
+										<Panel height="33.3rem" backgroundDesign="Solid">
+											<VBox>
+												<VBox class="border" backgroundDesign="Solid" height="3rem">
+													<Title text="{i18n>SALES_MARKETING_TITLE}" level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+												</VBox>
+												<VBox items="{viewData>/SalesMarketing}">
+													<VBox class="sapUiSmallMarginTop">
+														<VBox backgroundDesign="Solid">
+															<Label text="{viewData>CustomerName}" design="Bold" class="sapUiSmallMarginBegin"/>
+														</VBox>
+														<HBox class="border" backgroundDesign="Solid" justifyContent="SpaceAround">
+															<VBox alignItems="Center">
+																<Label text="{i18n>OIL_TITLE}" class="sapUiSmallMarginTop"/>
+																<customChart:ComparisonArcChart nomination="{path:'viewData>OilPlannedValue', formatter: '.formatter.getFloatValue'}"
+																	cdp="{path:'viewData>OilActualValue', formatter: '.formatter.getFloatValue'}"
+																	surplusDeficit="{path:'viewData>OilSurplusDeficit', formatter: '.formatter.getFloatValue'}"/>
+															</VBox>
+															<VBox alignItems="Center">
+																<Label text="{i18n>GAS_TITLE}" class="sapUiSmallMarginTop"/>
+																<customChart:ComparisonArcChart nomination="{path:'viewData>GasPlannedValue', formatter: '.formatter.getFloatValue'}"
+																	cdp="{path:'viewData>GasActualValue', formatter: '.formatter.getFloatValue'}"
+																	surplusDeficit="{path:'viewData>GasSurplusDeficit', formatter: '.formatter.getFloatValue'}"/>
+															</VBox>
+														</HBox>
+													</VBox>
+												</VBox>
+											</VBox>
+										</Panel>
+										<layoutData>
+											<l:GridData span="L4 M6 S12"/>
+										</layoutData>
+									</VBox>
+								</l:Grid>
+								<l:layoutData>
+									<l:GridData span="L9 M6 S12"/>
+								</l:layoutData>
+							</l:VerticalLayout>
+							<l:VerticalLayout width="100%">
+								<l:Grid hSpacing="0" vSpacing="0" id="poProductionPlanningContainer">
+									<VBox backgroundDesign="Solid">
+										<VBox class="border" height="3rem">
+											<Title text="{i18n>CUMULATIVE_PRODUCTION_TITLE}" level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+										</VBox>
+										<VBox items="{viewData>/CummulativeProdOil}">
+											<VBox>
+												<Label text="Oil (BBL)" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedValue', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualValue', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedValue}) > Number(${viewData>ActualValue}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<VBox items="{viewData>/CummulativeProdGas}">
+											<VBox>
+												<Label text="Gas (MCF)" class="sapUiSmallMarginBegin"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedValue', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualValue', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedValue}) > Number(${viewData>ActualValue}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<layoutData>
+											<l:GridData span="L4 M6 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox backgroundDesign="Solid" class="sapUiSmallMarginBegin">
+										<VBox class="border" height="3rem">
+											<Title text="{i18n>INSTANT_RATE_TITLE}" level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+										</VBox>
+										<VBox items="{viewData>/InstantRateProdOil}">
+											<VBox>
+												<Label text="Oil (BBL)" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedRate', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualRate', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedRate}) > Number(${viewData>ActualRate}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<VBox items="{viewData>/InstantRateProdGas}">
+											<VBox>
+												<Label text="Gas (MCF)" class="sapUiSmallMarginBegin"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedRate', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualRate', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedRate}) > Number(${viewData>ActualRate}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<layoutData>
+											<l:GridData span="L4 M6 S12"/>
+										</layoutData>
+									</VBox>
+									<VBox backgroundDesign="Solid" class="sapUiSmallMarginBegin">
+										<VBox class="border" height="3rem">
+											<Title text="{i18n>YESTERDAY_PRODUCTION_TITLE}" level="H1" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+										</VBox>
+										<VBox items="{viewData>/YesterdayProdOil}">
+											<VBox>
+												<Label text="Oil (BBL)" class="sapUiSmallMarginBegin sapUiSmallMarginTop"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedValue', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualValue', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedValue}) > Number(${viewData>ActualValue}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<VBox items="{viewData>/YesterdayProdGas}">
+											<VBox>
+												<Label text="Gas (MCF)" class="sapUiSmallMarginBegin"/>
+												<mc:BulletMicroChart size="L" width="90%" targetValue="{path:'viewData>PlannedValue', formatter: '.formatter.getFloatValue'}"
+													class="sapUiSmallMargin">
+													<mc:actual>
+														<mc:BulletMicroChartData value="{path:'viewData>ActualValue', formatter: '.formatter.getFloatValue'}"
+															color="{= Number(${viewData>PlannedValue}) > Number(${viewData>ActualValue}) ? 'Error' : 'Good' }"/>
+													</mc:actual>
+													<mc:thresholds>
+														<mc:BulletMicroChartData value="0" color="Error"/>
+													</mc:thresholds>
+												</mc:BulletMicroChart>
+											</VBox>
+										</VBox>
+										<layoutData>
+											<l:GridData span="L4 M6 S12"/>
+										</layoutData>
+									</VBox>
+								</l:Grid>
+								<l:layoutData>
+									<l:GridData span="L9 M6 S12"/>
+								</l:layoutData>
+							</l:VerticalLayout>
+						</l:content>
+					</l:Grid>
+				</l:VerticalLayout>
+			</content>
+			<dependents>
+				<core:Fragment fragmentName="com.pdms.og.production_overview.fragment.BusyDialog" type="XML"></core:Fragment>
+			</dependents>
+		</Page>
+	</u:Shell>
+</mvc:View>

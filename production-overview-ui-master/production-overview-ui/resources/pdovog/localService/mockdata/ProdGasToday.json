@@ -1,0 +1,314 @@
+[
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815613')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815613",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "North America",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815614')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815614",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "USA",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815615')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815615",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "Reg1",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815616')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815616",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "RID1",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815617')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815617",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "WID1",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815618')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815618",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "ALM_esp_1",
+		"TotalValue": "9000",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Actual"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815619')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815619",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "North America",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815620')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815620",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "USA",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815621')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815621",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "Reg1",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815622')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815622",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "RID2",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815623')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815623",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "WID2",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815624')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815624",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 00:00:00",
+		"NODE": "ALM_esp_2",
+		"TotalValue": "10800",
+		"Timestamp": "/Date(1487721600000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281561')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281561",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "North America",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281562')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281562",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "USA",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281563')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281563",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "Reg1",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281564')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281564",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "RID1",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281565')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281565",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "WID1",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281566')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281566",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2016-10-25 12:00:00",
+		"NODE": "ALM_esp_1",
+		"TotalValue": "6000",
+		"Timestamp": "/Date(1477396800000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281567')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281567",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "North America",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281568')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281568",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "USA",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('14882896281569')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "14882896281569",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "Reg1",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815610')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815610",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "RID1",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815611')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815611",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "WID1",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	},
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/ProdGasToday('148828962815612')",
+			"type": "com.sap.pdms.og.production-overview.services.ProdGasTodayType"
+		},
+		"ProdId": "148828962815612",
+		"CC_Today": "2017-02-28 13:47:08",
+		"CC_TimestampDate": "2017-02-22 12:46:00",
+		"NODE": "ALM_esp_1",
+		"TotalValue": "17100",
+		"Timestamp": "/Date(1487767560000)/",
+		"PropertySetTypeId": "Target"
+	}
+]

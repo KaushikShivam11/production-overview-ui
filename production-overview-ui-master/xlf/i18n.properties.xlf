@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="javapropertyresourcebundle" original="/usr/sap/ljs/app/Converter_2971757210910713000/production-overview-ui/resources/pdovog/i18n/i18n.properties" source-language="en">
+    <header>
+      <skl>
+        <internal-file crc="158cf151c11fe25d86d742152489383c" form="base64">H4sIAAAAAAAAAKVWW2/bNhR+16/gEKBNgCVwhjZrAvhBlmlbsG6Q6Cx+EhiJtonKokZRSY1h+e07lGRFWp01xfxkked85zt3nqFVzv+sGOIpyxXfcCYRL1HOWMpStBESsScmD+iqkKJgUnFWog3PGFICPTJUFZmgWhI+1Q5OJc3LjCouclQeSsX2V8YZiuMs5Ve9u6uq4umY3ny+3tzQ0eU1fUwvr6/Z75e3n2+/XI6+jEa/jUbJLb25MYyzB2KTO2QWRcaTBjmne2aYQRDDjYPHPs/QBzSnJQqkSKuklvGB9hNnzwCwnuJoCJCyMpG80P9rHBCwQjsgtu+NT2AgsUHaCM1TbQYgX15e0ELsGbrX1y9v/o7sa9kaSnGVMWPhuzi+t/Ef73ThwZk4d8ihjyyrkzLjmWLShviiORNbSYvdAfG8PZ9QacyxPw/NYLGOZ7ZDcBjbBLuxY06wM+5U6uj6gEyEyBQv/hc28X2H2MEQ/W3eZlkyhcihYENwM4owick6wCeYvyr9iPpPwh/J/8uAzp2dg+qT7g6RlyjjpWqSiJ652qEiownbiSyFxtEUdBfk1f4RPqFqOFApDdsDO/fY0/UVxY4dkTbtQ+jzv0Z/X5wImqNN1k4tGNV2AsmF5OpgBKHthzZZN5gLbE7BnyZSncypOP0k4jE4fcwfcey7NgjACa4D2XfxfR/6kfd3+Dqtr7X9RDMYgDuWFSjlNBPbtklfy3xqm44/b5M2qO/JCqD8JZpUSkHLKvZNGf4yhmMCZAh+IGN/2QlaNE8gYI89Ycv0LOwMFBqpTskRW7HZDJSAjD+bDZRACvmbTedeRDMY1XpiuVR+ZYrnW5TsqGyL14hMB0exa4ZLTGzv6Fuj9eFVp8PrzSVL7Pdc7SGeA8Qg9Kcrq06C5buuTVxISYt7UrvDTqp9pRfDE+ub6WNbK3flmMS+x3HPTINtndLudW+pKDANqWIDSNuLiAkEQ5Pgrh0b2R4JrdZhrRlsNJnSwwBojSOov6m5/p5ap/CxHHJbu9Fctw+UdVWkYAM2KIcV0WTXhBJeBVMgNm2TqwVXrSBVCAbFax3D0ujTmZvRsVDh5ty1ZhedrF4zfVnfdnoL6HwycS7a5eYJhWaigvL5rw1XDwJveVfzrjs14/lXPXA/5kIfAMBHVNAtK42JaS2hI2O9+sbRTjzXS7Gj5h3l+2vS80k881fetGXZsepCSPS47VRrGvB8SXkJc/kAwXresVzPZAnjmup+QExKzROeLbol9LiWrBSVTBg6/zT61Nxf9E3rDJBaDh5KpU5Bp6ExO/Nt6HBtYAGtl2kLb4cOPMB3rbjLyhLC1PqNw9APW5/r+87fRrodU/1nTKuiuUZCysOviEI4kl0Ob56sdVokSSUlS39BQcZoqZ9rB0S3FPIFDcSk8Q+JRVTLDgoAAA==</internal-file>
+      </skl>
+      <phase-group>
+        <phase company-name="SAP AG" date="2017-04-12T12:09:00Z" phase-name="file-creation" process-name="file-creation" tool-id="urn:x-sap:sls-mlt:java:properties-flexible-converter"/>
+      </phase-group>
+      <tool tool-company="SAP AG" tool-id="urn:x-sap:sls-mlt:java:properties-flexible-converter" tool-name="TEW: Java properties Flexible File Converter" tool-version="1.1.0"/>
+    </header>
+    <body>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="APP_TITLE" resname="APP_TITLE" sap:sc="XTIT">
+        <source>Oil &amp; Gas Production Overview</source>
+        <note annotates="source" from="Developer">Application name</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="APP_DESCRIPTION" resname="APP_DESCRIPTION" sap:sc="YDES">
+        <source>Production Overview of Oil and Gas</source>
+        <note annotates="source" from="Developer">Application description</note>
+      </trans-unit>
+      <trans-unit datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="HOME_VIEW_TITLE" resname="HOME_VIEW_TITLE">
+        <source>Oil &amp; Gas Production Overview</source>
+        <note annotates="source" from="Developer">~~~ Home View ~~~~~~~~~~~~~~~~~~~~~~~~~~
+XTIT: Home view title</note>
+      </trans-unit>
+      <trans-unit datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="GEOGRAPHY_FILTER_ITEM_LABEL" resname="GEOGRAPHY_FILTER_ITEM_LABEL">
+        <source>Geography</source>
+        <note annotates="source" from="Developer">XLBL: Label for FilterItem Geography in FilterBar</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="GEOGRAPHY_FILTER_ITEM_TOOLTIP" resname="GEOGRAPHY_FILTER_ITEM_TOOLTIP" sap:sc="XTOL">
+        <source>Geography</source>
+        <note annotates="source" from="Developer">Tooltip for FilterItem Geography in FilterBar</note>
+      </trans-unit>
+      <trans-unit datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="ASSET_TYPE_FILTER_ITEM_LABEL" resname="ASSET_TYPE_FILTER_ITEM_LABEL">
+        <source>Asset Type</source>
+        <note annotates="source" from="Developer">XLBL: Label for FilterItem Asset Type in FilterBar</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="ASSET_TYPE_FILTER_ITEM_TOOLTIP" resname="ASSET_TYPE_FILTER_ITEM_TOOLTIP" sap:sc="XTOL">
+        <source>Asset Type</source>
+        <note annotates="source" from="Developer">Tooltip for FilterItem Asset Type in FilterBar</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="INTERVENTIONS_LIST_TITLE" resname="INTERVENTIONS_LIST_TITLE" sap:sc="XTIT">
+        <source>Interventions (<ph id="1">{0}</ph>)</source>
+        <note annotates="source" from="Developer">Interventions list title with placeholder for the number of items</note>
+      </trans-unit>
+      <trans-unit datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="PRIORITY_LIST_HEADER_LABEL" resname="PRIORITY_LIST_HEADER_LABEL">
+        <source>Priority</source>
+        <note annotates="source" from="Developer">XLBL: Label for List Item Header Priority</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="PRIORITY_LIST_HEADER_TOOLTIP" resname="PRIORITY_LIST_HEADER_TOOLTIP" sap:sc="XTOL">
+        <source>Priority</source>
+        <note annotates="source" from="Developer">Tooltip for List Item Header Priority</note>
+      </trans-unit>
+      <trans-unit datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="INTERVENTION_LIST_HEADER_LABEL" resname="INTERVENTION_LIST_HEADER_LABEL">
+        <source>Intervention</source>
+        <note annotates="source" from="Developer">XLBL: Label for List Item Header Intervention</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="INTERVENTION_LIST_HEADER_TOOLTIP" resname="INTERVENTION_LIST_HEADER_TOOLTIP" sap:sc="XTOL">
+        <source>Intervention</source>
+        <note annotates="source" from="Developer">Tooltip for List Item Header Intervention</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="GEOGRAPHY_DIALOG_TITLE" resname="GEOGRAPHY_DIALOG_TITLE" sap:sc="XTIT">
+        <source>Geography</source>
+        <note annotates="source" from="Developer">Geography value help dialog title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="OK_BUTTON_TEXT" resname="OK_BUTTON_TEXT" sap:sc="XBUT">
+        <source>OK</source>
+        <note annotates="source" from="Developer">OK Button text</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="CANCEL_BUTTON_TEXT" resname="CANCEL_BUTTON_TEXT" sap:sc="XBUT">
+        <source>Cancel</source>
+        <note annotates="source" from="Developer">Cancel button text</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="LOGOFF_BUTTON_TEXT" resname="LOGOFF_BUTTON_TEXT" sap:sc="XBUT">
+        <source>Log Off</source>
+        <note annotates="source" from="Developer">Logoff button text</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="SALES_MARKETING_TITLE" resname="SALES_MARKETING_TITLE" sap:sc="XTIT">
+        <source>Sales &amp; Marketing</source>
+        <note annotates="source" from="Developer">Sales and Marketing chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="PRODUCTION_COMMITMENT_TITLE" resname="PRODUCTION_COMMITMENT_TITLE" sap:sc="XTIT">
+        <source>Production Commitment</source>
+        <note annotates="source" from="Developer">Production Commitment chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="CUMULATIVE_PRODUCTION_TITLE" resname="CUMULATIVE_PRODUCTION_TITLE" sap:sc="XTIT">
+        <source>Cumulative Production</source>
+        <note annotates="source" from="Developer">cumulative Production chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="INSTANT_RATE_TITLE" resname="INSTANT_RATE_TITLE" sap:sc="XTIT">
+        <source>Instant Production Rate</source>
+        <note annotates="source" from="Developer">Instant Rate chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="YESTERDAY_PRODUCTION_TITLE" resname="YESTERDAY_PRODUCTION_TITLE" sap:sc="XTIT">
+        <source>Yesterday's Production</source>
+        <note annotates="source" from="Developer">Yesterday chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="LAST_UPDATED_TEXT" resname="LAST_UPDATED_TEXT" sap:sc="YMSG">
+        <source>Last Updated at <ph id="1">{0}</ph></source>
+        <note annotates="source" from="Developer">Last updated time text</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="GAS_TITLE" resname="GAS_TITLE" sap:sc="XTIT">
+        <source>Gas (MCF)</source>
+        <note annotates="source" from="Developer">Gas chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="OIL_TITLE" resname="OIL_TITLE" sap:sc="XTIT">
+        <source>Oil (BBL)</source>
+        <note annotates="source" from="Developer">Oil chart title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="BACK_TO_HOME" resname="BACK_TO_HOME" sap:sc="XLNK">
+        <source>Show Home</source>
+        <note annotates="source" from="Developer">text for link in 'not found' pages</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="NOT_FOUND_TITLE" resname="NOT_FOUND_TITLE" sap:sc="XTIT">
+        <source>Not Found</source>
+        <note annotates="source" from="Developer">Not found view title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="NOT_FOUND_TEXT" resname="NOT_FOUND_TEXT" sap:sc="YMSG">
+        <source>The requested resource was not found</source>
+        <note annotates="source" from="Developer">The not found text is displayed when there was an error loading the resource (404 error)</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="ERROR_TITLE" resname="ERROR_TITLE" sap:sc="YMSE">
+        <source>Error</source>
+        <note annotates="source" from="Developer">Error Message title</note>
+      </trans-unit>
+      <trans-unit xmlns:sap="urn:x-sap:sls-mlt" datatype="x-urn:x-sap:sls-mlt:java:flexible-converter:messageformat" id="ERROR_TEXT" resname="ERROR_TEXT" sap:sc="YMSG">
+        <source>Sorry, a technical error occurred! Please try again later</source>
+        <note annotates="source" from="Developer">Error dialog description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

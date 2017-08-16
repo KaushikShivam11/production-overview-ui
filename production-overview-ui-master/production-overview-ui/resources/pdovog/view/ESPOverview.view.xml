@@ -1,0 +1,173 @@
+<mvc:View xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data" xmlns:opl="sap.uxap" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:vk="sap.ui.vk" xmlns:mc="sap.suite.ui.microchart" xmlns:u="sap.ui.unified" controllerName="com.pdms.og.production_overview.controller.ESPOverview">
+	<u:Shell id="myShell" icon="{viewData&gt;/logo}">
+		<u:user>
+			<u:ShellHeadUserItem image="sap-icon://person-placeholder" username="{config&gt;/userId}" press="onUserItemPressed"/>
+		</u:user>
+		<u:search>
+			<Text width="100%" textAlign="Center" text="ESP Overview"/>
+		</u:search>
+		<u:headItems>
+			<u:ShellHeadItem icon="sap-icon://nav-back" press="onNavBack"/>
+		</u:headItems>
+		<Page id="page" showFooter="false" showHeader="false">
+			<content>
+				<opl:ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false">
+					<opl:headerTitle>
+						<opl:ObjectPageHeader objectTitle="{viewData&gt;/ThingName} {viewData&gt;/PumpDescription}">
+							<ObjectAttribute title="" text=" "/>
+							<opl:actions>
+								<opl:ObjectPageHeaderActionButton icon="sap-icon://email" type="" press="onEmailPress"/>
+								<opl:ObjectPageHeaderActionButton text="Create PM Notification" hideIcon="true" hideText="false" type="" press="onCreatePMNotification"/>
+							</opl:actions>
+						</opl:ObjectPageHeader>
+					</opl:headerTitle>
+					<opl:headerContent>
+						<l:Grid>
+							<l:VerticalLayout>
+								<ObjectStatus title="Well Name" text="{viewData&gt;/WellName}"/>
+								<ObjectStatus title="Installation Date" text="{viewData&gt;/InstallationDate}"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<l:layoutData>
+									<opl:ObjectPageHeaderLayoutData visibleS="false"/>
+								</l:layoutData>
+								<ObjectStatus title="Manufacturer" text="{viewData&gt;/PumpManu}"/>
+								<ObjectStatus title="Model" text="{viewData&gt;/PumpModel}"/>
+								<ObjectStatus title="ESP Pump Status" text="{path:'viewData&gt;/PumpRunningStatus', formatter:'.formatter.getRunningStatus'}"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<l:layoutData>
+									<opl:ObjectPageHeaderLayoutData visibleS="false"/>
+								</l:layoutData>
+								<ObjectStatus title="Alert Status" text="{viewData&gt;/AlertStatus}"/>
+								<ObjectStatus title="Alert Start Date" text="{viewData&gt;/AlertStartDate}"/>
+							</l:VerticalLayout>
+						</l:Grid>
+					</opl:headerContent>
+					<opl:sections>
+						<opl:ObjectPageSection>
+							<opl:subSections>
+								<opl:ObjectPageSubSection>
+									<l:Grid defaultSpan="L6 M12 S12" class="sapUiSmallMarginTop">
+										<l:content>
+											<VBox>
+												<vk:Viewer id="viewer" height="795px" showSceneTree="false"/>
+											</VBox>
+											<VBox>
+												<VBox backgroundDesign="Solid" class="sapUiSmallMarginBottom">
+													<Title text="ESP Monitoring" class="sapUiSmallMarginTop sapUiSmallMarginBottom sapUiSmallMarginBegin headingStyle"/>
+													<l:Grid defaultSpan="L12 M12 S12" content="{viewData&gt;/ProductionMonitoringData}">
+														<HBox class="sapUiSmallMarginBottom">
+															<VBox class="sapUiMediumMarginEnd">
+																<Label text="Pump Intake Pressure" class="subheadingStyle"/>
+																<HBox class="sapUiLargeMarginBottom" alignItems="Center">
+																	<NumericContent value="{viewData&gt;PumpIntakePressure}" scale="Psi" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon" alt="Pump Intake Pressure"/>
+																</HBox>
+																<Label text="Motor Current" class="subheadingStyle"/>
+																<HBox alignItems="Center">
+																	<NumericContent value="{viewData&gt;MotorCurrent}" scale="A" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon"/>
+																</HBox>
+															</VBox>
+															<VBox class="sapUiMediumMarginEnd">
+																<Label text="Motor Winding Temp" class="subheadingStyle"/>
+																<HBox class="sapUiLargeMarginBottom" alignItems="Center">
+																	<NumericContent value="{viewData&gt;MotorWindingTemperature}" scale="F" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon" alt="Motor Winding Temperature"/>
+																</HBox>
+																<Label text="Vibration" class="subheadingStyle"/>
+																<HBox>
+																	<NumericContent value="{viewData&gt;Vibration}" scale="g" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon" alt="Motor Winding Temperature" class="sapUiSmallMarginTop"/>
+																</HBox>
+															</VBox>
+															<VBox>
+																<Label text="Frequency" class="subheadingStyle"/>
+																<HBox class="sapUiLargeMarginBottom" alignItems="Center">
+																	<NumericContent value="{viewData&gt;CurrentFrequency}" scale="Hz" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon" alt="Motor Winding Temperature"/>
+																</HBox>
+																<Label text="Pump Discharge Pressure" class="subheadingStyle"/>
+																<HBox>
+																	<NumericContent value="{viewData&gt;PumpDischargePressure}" scale="Psi" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"/>
+																	<core:Icon src="sap-icon://line-chart" press="onPressIcon" alt="Motor Winding Temperature" class="sapUiSmallMarginTop"/>
+																</HBox>
+															</VBox>
+														</HBox>
+													</l:Grid>
+												</VBox>
+												<VBox backgroundDesign="Solid">
+													<Title text="Production Data" class="sapUiSmallMarginTop sapUiLargeMarginBottom sapUiSmallMarginBegin headingStyle"/>
+													<l:Grid defaultSpan="L12 M12 S12" content="{viewData&gt;/ProductionMonitoringData}">
+														<VBox backgroundDesign="Solid">
+															<VBox class="sapUiSmallMarginBegin">
+																<HBox class="sapUiLargeMarginBegin">
+																	<VBox class="sapUiLargeMarginEnd">
+																		<Title text="API Gravity" class="subheadingStyle"/>
+																		<Text text="{path:'viewData&gt;APIGravity', formatter:'.formatter.getFloat'}" class="standardText"/>
+																	</VBox>
+																	<VBox>
+																		<viz:VizFrame id="idVizFrame" class="subheadingStyle" legendVisible="false" uiConfig="{applicationSet:'fiori'}" vizType="donut" width="320px" height="240px">
+																			<viz:dataset>
+																				<viz.data:FlattenedDataset data="{viewData&gt;/ProductionData}">
+																					<viz.data:dimensions>
+																						<viz.data:DimensionDefinition name="Store Name" value="{viewData&gt;Store Name}"/>
+																					</viz.data:dimensions>
+																					<viz.data:measures>
+																						<viz.data:MeasureDefinition name="Revenue" value="{viewData&gt;Revenue}"/>
+																					</viz.data:measures>
+																				</viz.data:FlattenedDataset>
+																			</viz:dataset>
+																			<viz:feeds>
+																				<viz.feeds:FeedItem uid="size" type="Measure" values="Revenue"/>
+																				<viz.feeds:FeedItem uid="color" type="Dimension" values="Store Name"/>
+																			</viz:feeds>
+																		</viz:VizFrame>
+																	</VBox>
+																</HBox>
+															</VBox>
+															<VBox>
+																<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																	<mc:ComparisonMicroChart scale="" colorPalette="#5cbae6" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;FluidRateTarget',formatter:'.formatter.getFloat'}">
+																		<mc:data>
+																			<mc:ComparisonMicroChartData title="Fluid Rate" value="{path:'viewData&gt;FluidRate',formatter:'.formatter.getFloat'}"/>
+																		</mc:data>
+																	</mc:ComparisonMicroChart>
+																	<Title text="{path:'viewData&gt;FluidRateTarget',formatter:'.formatter.getFloat'} Bbls"/>
+																</HBox>
+																<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																	<mc:ComparisonMicroChart scale="" colorPalette="#b6d957" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;GasRateTarget',formatter:'.formatter.getFloat'}">
+																		<mc:data>
+																			<mc:ComparisonMicroChartData title="Gas Rate" value="50"/>
+																		</mc:data>
+																	</mc:ComparisonMicroChart>
+																	<Title text="{path:'viewData&gt;GasRateTarget',formatter:'.formatter.getFloat'} Mcf"/>
+																</HBox>
+																<HBox alignItems="Center">
+																	<mc:ComparisonMicroChart scale="" colorPalette="#fac364" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;WellHeadPressureTarget',formatter:'.formatter.getFloat'}">
+																		<mc:data>
+																			<mc:ComparisonMicroChartData title="Wellhead Pressure" value="{path:'viewData&gt;WellHeadPressure',formatter:'.formatter.getFloat'}"/>
+																		</mc:data>
+																	</mc:ComparisonMicroChart>
+																	<Title text="{path:'viewData&gt;WellHeadPressureTarget',formatter:'.formatter.getFloat'} Psi"/>
+																</HBox>
+															</VBox>
+														</VBox>
+													</l:Grid>
+												</VBox>
+											</VBox>
+										</l:content>
+									</l:Grid>
+								</opl:ObjectPageSubSection>
+							</opl:subSections>
+						</opl:ObjectPageSection>
+					</opl:sections>
+				</opl:ObjectPageLayout>
+			</content>
+			<dependents>
+				<core:Fragment fragmentName="com.pdms.og.production_overview.fragment.BusyDialog" type="XML"/>
+			</dependents>
+		</Page>
+	</u:Shell>
+</mvc:View>

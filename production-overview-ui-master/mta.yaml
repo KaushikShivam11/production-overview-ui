@@ -1,0 +1,38 @@
+_schema-version: '2.0'
+ID: com.sap.pdms.og.production-overview-ui
+version: 1.4.2
+
+modules:
+ - name: production-overview-ui
+   type: html5
+   path: production-overview-ui
+   parameters:
+     memory: 256M
+   requires:
+    - name: pdms-uaa
+    - name: service-catalog-ups
+   provides:
+    - name: production-overview-ui-destination
+      properties:
+         name: ${app-name}
+         url: ${default-url}
+         type: com.sap.pdms.destination
+    - name: production-overview-ui-plugin
+      properties:
+         name: ${app-name}
+         source: ^/app/pdovog/(.*)$
+         target: $1
+         destination: ${app-name}
+         csrfProtection: false
+         authenticationType: "xsuaa"
+         type: com.sap.pdms.plugin
+   properties:
+      NODE_ENV: production
+      SERVICE_REGISTRATION: '{"id":"com.sap.pdms.app.pdovog","name":"Oil and Gas Production Overview","description":"Oil and Gas Production Overview","imageUrl":"sap-icon://Chart-Tree-Map","serviceUrl":"/app/pdovog/index.html","interactive": true,"serviceType": {"id": "com.sap.pdms.App"}}'
+      scheduleMaintenanceUrl: ${scheduleMaintenanceUrl}
+         
+resources:
+ - name: pdms-uaa
+   type: org.cloudfoundry.existing-service
+ - name: service-catalog-ups
+   type: org.cloudfoundry.existing-service

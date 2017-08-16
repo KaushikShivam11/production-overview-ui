@@ -1,0 +1,137 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "com.pdms.og.production_overview",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{APP_TITLE}}",
+		"description": "{{APP_DESCRIPTION}}",
+		"resources": "resources.json",
+		"ach": "ach",
+		"dataSources": {
+			"Production_Overview_DataSource": {
+				"uri": "/api/pdms/og/core/svc/OGCoreServices.xsodata/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml",
+					"maxAge": 360
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_bluecrystal", "sap_belize", "sap_belize_plus"]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "com.pdms.og.production_overview.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ui.comp": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.pdms.og.production_overview.i18n.i18n"
+				}
+			},
+			"thingTypesModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/thingTypes.json"
+			},
+			"": {
+				"preload": true,
+				"dataSource": "Production_Overview_DataSource",
+				"settings": {
+					"json": true,
+					"useBatch": true
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.pdms.og.production_overview.view",
+				"controlId": "poApp",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": ["notFound"]
+				},
+				"async": true
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "Home",
+				"target": "home"
+			}, {
+				"pattern": "RodPumpOverview/{ThingId}/{Timestamp}",
+				"name": "RodPump",
+				"target": "rodpumpoverview"
+			}, {
+				"pattern": "ESPOverview/{ThingId}/{Timestamp}",
+				"name": "ESPPump",
+				"target": "esppumpoverview"
+			}],
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"viewLevel": 1,
+					"viewId": "idHomePage"
+				},
+				"rodpumpoverview": {
+					"viewName": "RodPumpOverview",
+					"viewLevel": 2,
+					"viewId": "idRodPumpPage"
+				},
+				"esppumpoverview": {
+					"viewName": "ESPOverview",
+					"viewLevel": 2,
+					"viewId": "idESPPumpPage"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+	}
+}

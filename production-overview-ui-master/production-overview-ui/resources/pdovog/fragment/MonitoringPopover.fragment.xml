@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:f="sap.ui.layout.form">
+	<Popover showHeader="false">
+		<viz:VizFrame id="idVizFramefrag" legendVisible="false" vizType="line" width="320px" height="240px">
+			<viz:dataset>
+				<viz.data:FlattenedDataset data="{demoModel>/results}">
+					<viz.data:dimensions>
+						<viz.data:DimensionDefinition name="Timestamp" value="{demoModel>Timestamp}"/>
+					</viz.data:dimensions>
+					<viz.data:measures>
+						<viz.data:MeasureDefinition name="Parameter" value="{demoModel>Parameter}"/>
+					</viz.data:measures>
+				</viz.data:FlattenedDataset>
+			</viz:dataset>
+			<viz:feeds>
+				<viz.feeds:FeedItem id="valueAxisFeed" uid="valueAxis" type="Measure" values="Parameter"/>
+				<viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" values="Timestamp"/>
+			</viz:feeds>
+		</viz:VizFrame>
+	</Popover>
+</core:FragmentDefinition>

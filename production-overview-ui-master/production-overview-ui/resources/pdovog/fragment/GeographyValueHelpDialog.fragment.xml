@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:uitable="sap.ui.table">
+	<Dialog title="{i18n>GEOGRAPHY_DIALOG_TITLE}" contentWidth="30%" resizable="true" draggable="true">
+		<content>
+			<uitable:TreeTable id="poTreeTableGeography" selectionMode="MultiToggle" columnHeaderVisible="false" visibleRowCount="Auto"
+				rowSelectionChange="onGeoSelectionChange" toggleOpenState="onToggleGeoNodes"
+				rows="{path : '/Orgs', parameters : { treeAnnotationProperties : { hierarchyLevelFor : 'LEVEL', hierarchyNodeFor : 'OrgUnitID', hierarchyParentNodeFor : 'ParentOrgUnitID', hierarchyDrillStateFor : 'CC_IS_LEAF' } } }">
+				<uitable:columns>
+					<uitable:Column label="">
+						<uitable:template>
+							<Text text="{OrgUnitName}"/>
+						</uitable:template>
+					</uitable:Column>
+				</uitable:columns>
+			</uitable:TreeTable>
+		</content>
+		<beginButton>
+			<Button text="{i18n>OK_BUTTON_TEXT}" type="Emphasized" press="onConfirmGeographySelect"/>
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>CANCEL_BUTTON_TEXT}" press="OnCancelGeographySelect"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

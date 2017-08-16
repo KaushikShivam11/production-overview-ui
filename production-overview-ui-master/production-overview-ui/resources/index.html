@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		<title>O&G Production Overview</title>
+		<!--Start: prevent clickjacking for production -->
+		<style> html {
+		  display: none;
+		}
+		</style>
+		<script>
+		  if (self == top) {
+		    document.documentElement.style.display = 'block';
+		  } else {
+		    top.location = self.location;
+		  }
+		</script>
+		<script type="application/javascript" src="/app/ahcc/lib/pdms-core-js/dist/pdms-core.js"></script>
+		<script type="application/javascript" src="/app/ahcc/lib/config.js"></script>
+		<script type="application/javascript" src="/app/ahcc/lib/sap-pdms-ipro-api/dist/sap-pdms-ipro-api.js"></script>
+		<script type="application/javascript" src="/workspace-management-ui/dist/pdms-app-wsagent.js"></script>
+		<!--End: prevent clickjacking for production
+		/lib/ui5/resources/sap-ui-cachebuster/sap-ui-core.js
+		https://sapui5.hana.ondemand.com/resources/sap-ui-core.js -->
+		<script id="sap-ui-bootstrap"
+			src="/lib/ui5/resources/sap-ui-cachebuster/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"com.pdms.og.production_overview": "./pdovog", "sap.ui.vk":"/lib/addon/ui5/1.42.5/META-INF/resources/sap/ui/vk/"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="pdovog/css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "com.pdms.og.production_overview"
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

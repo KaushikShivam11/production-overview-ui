@@ -1,0 +1,67 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="Upload/Download">
+		<VBox>
+			<form:Form id="mulitUpload"
+					editable="true">
+				<form:layout>
+					<form:ResponsiveGridLayout
+						id="formId"
+						backgroundDesign="Translucent"
+						labelSpanXL="-1"
+						labelSpanL="4"
+						labelSpanM="2"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="-1"
+						emptySpanL="0"
+						emptySpanM="0"
+						emptySpanS="0"
+						columnsXL="-1"
+						columnsL="2"
+						columnsM="1"
+						singleContainerFullSize="true">
+					</form:ResponsiveGridLayout>
+				</form:layout>
+				<form:formContainers>
+					<form:FormContainer>
+						<form:FormElement label="ThingTypes">
+							<form:fields>
+								<ComboBox items="{
+										path: 'thingTypesModel>/ThingTypes'
+									}"
+									selectionChange="_handleThingTypeSelectionChange">
+									<core:Item key="{thingTypesModel>name}" text="{thingTypesModel>name}"/>
+								</ComboBox>
+							</form:fields>
+						</form:FormElement>
+						<form:FormElement label="Upload File">
+							<form:fields>
+								<u:FileUploader id="fileUploadId"
+											uploadUrl="https://github.wdf.sap.corp/PDMS-OG-UpStm/test_I300733"
+											width="100%"
+											tooltip="Upload File to local system"
+											change="_handleAttachmentValueChange"
+											uploadComplete="_handleAttachmentUploadComplete"
+											fileType="txt"
+											useMultipart="true"
+											sendXHR="true">
+									
+								</u:FileUploader>
+							</form:fields>
+						</form:FormElement>
+					</form:FormContainer>
+				</form:formContainers>
+			</form:Form>
+		</VBox>
+		<buttons>
+			<Button id="uploadBtn" text="Upload" enabled="false"/>
+			<Button id="downloadBtn" text="Download" enabled="false"/>
+			<Button text="Close" press="_attachmentDialogClose" />
+		</buttons>
+	</Dialog>
+	
+</core:FragmentDefinition>

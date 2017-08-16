@@ -1,0 +1,49 @@
+/* Enter your custom styles here */
+
+#__xmlview0--sales-titleText {
+    font-size: 27px;
+}
+div#__xmlview0--border {
+    border-bottom: solid #e5e5e5;
+}
+.sm {
+    font-size: 19px;
+}
+.text {
+    border-bottom: solid #e5e5e5;
+    border-left: 20px;
+}
+.border {
+    border-bottom: 1px solid #e5e5e5;
+}
+.sapMPanelContent {
+    padding: 0rem !important;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+.standardText {
+    font-size: 2.5rem;
+    color: rgb(94, 105, 110);
+}
+.headingStyle {
+    font-size: 20px;
+    color: #666666;
+}
+.subheadingStyle {
+    font-size: 16px !important;
+    color: #666666 !important;
+}
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+.grid line {
+    stroke: black;
+    stroke-opacity: 0.7;
+    /*shape-rendering: crispEdges;*/
+}
+.grid path {
+    stroke-width: 0;
+}

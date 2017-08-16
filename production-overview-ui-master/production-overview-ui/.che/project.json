@@ -1,0 +1,1 @@
+{"type":"sap.html5","builders":{"default":"ui5-builder","configs":{}},"runners":{"configs":{}},"attributes":{"mta_module_parent":["/production-overview-ui"],"sap.watt.common.setting":["{\"generation\":[{\"templateId\":\"hanatemplates.ui5project\",\"templateVersion\":\"1.0.0\",\"dateTimeStamp\":\"Sat, 04 Mar 2017 08:22:25 GMT\"}]}"]},"mixinTypes":["mtamodule"]}

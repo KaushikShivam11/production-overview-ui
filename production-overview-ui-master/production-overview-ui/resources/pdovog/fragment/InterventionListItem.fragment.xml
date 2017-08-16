@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<CustomListItem type="Active" press="onInterventionPress">
+		<HBox class="sapUiSmallMarginTopBottom">
+			<core:Icon class="sapUiTinyMarginBegin" src="{path:'Status', formatter:'.formatter.getIconURI'}"
+				color="{path:'Status', formatter:'.formatter.getIconColor'}"/>
+			<Text text="{ThingName} {Description}" class="sapUiLargeMarginBegin"/>
+		</HBox>
+	</CustomListItem>
+</core:FragmentDefinition>

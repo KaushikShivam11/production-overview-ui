@@ -1,0 +1,14 @@
+{
+	"ThingTypes":[
+		{
+			"name":"ThingType1"	
+		},
+		{
+			"name":"ThingType2"	
+		},
+		{
+			"name":"ThingType3"	
+		}
+	]
+	
+}

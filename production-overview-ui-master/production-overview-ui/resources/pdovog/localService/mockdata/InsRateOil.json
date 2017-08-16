@@ -1,0 +1,11 @@
+[
+	{
+		"__metadata": {
+			"uri": "https://mo-264c532f5.mo.sap.corp:51025/ProductionOverviewService.xsodata/InsRateOil('14882897076671')",
+			"type": "com.sap.pdms.og.production-overview.services.InsRateOilType"
+		},
+		"RateNum": "14882897076671",
+		"ActualValue": "100",
+		"TargetValue": "200"
+	}
+]
